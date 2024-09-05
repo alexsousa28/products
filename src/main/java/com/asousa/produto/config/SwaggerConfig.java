@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class SwaggerConfig {
 
     @GetMapping("/")
-    public ResponseEntity<Void> redirectSwagge(HttpServletRequest request, HttpServletResponse response){
+    public ResponseEntity<Void> redirectSwagger(HttpServletRequest request, HttpServletResponse response){
         String url = "swagger-ui/index.html?configUrl=/v3/apis-docs/swagger-config/";
         response.setHeader("Location", url);
         response.setStatus(302);

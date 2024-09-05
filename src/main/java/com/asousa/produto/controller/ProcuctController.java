@@ -52,7 +52,7 @@ public class ProcuctController {
         if(product0.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Product not found");
         }
-        product0.get().add(linkTo(methodOn(ProcuctController.class).getAllProducts()).withRel("Products List"));
+        product0.get().add(linkTo(methodOn(ProcuctController.class).getAllProducts()).withRel("Products List "));
         return ResponseEntity.status(HttpStatus.OK).body(product0.get());
     }
 
